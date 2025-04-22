@@ -1,32 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>KivaSky DNS Profile</title>
+  <title>KivaSky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      background-color: #0b0c10;
-      color: #00f0ff;
+    html, body {
+      margin: 0;
+      padding: 0;
       font-family: monospace;
+      height: 100%;
+      width: 100%;
+      color: #00f0ff;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       text-align: center;
     }
-    img {
-      margin-top: 1em;
+
+    .logo {
+      width: 220px;
+      max-width: 80%;
+      margin-bottom: 1.5em;
+    }
+
+    .qr {
+      margin-top: 2em;
       width: 180px;
+    }
+
+    a {
+      color: #00f0ff;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1em;
+      display: inline-block;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>KivaSky</h1>
+  <img src="logo.png" alt="KivaSky Logo" class="logo">
   <p>We don’t ask who you are.<br>And we don’t tell anyone either.</p>
-  <p><i>Install anonymous DNS profile below:</i></p>
-  <a href="kivasky.signed.mobileconfig">Download Profile</a>
-  <img src="kivasky_qr.png" alt="QR to install profile">
+  <a href="kivasky.signed.mobileconfig">Download DNS Profile</a>
+  <img src="kivasky_qr.png" alt="QR Code for Profile" class="qr">
 </body>
 </html>
