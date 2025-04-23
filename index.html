@@ -31,6 +31,19 @@
       margin-top: 2em;
       width: 180px;
     }
+ .glitch {
+      animation: flicker 1.5s infinite;
+      letter-spacing: 0.05em;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      45% { opacity: 0.8; }
+      50% { opacity: 0.4; }
+      55% { opacity: 0.9; }
+      60% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
 
     a {
       color: #00f0ff;
@@ -46,9 +59,11 @@
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="KivaSky Logo" class="logo">
-  <p>We don’t ask who you are.<br>And we don’t tell anyone either.</p>
-  <a href="kivasky.signed.mobileconfig">Download DNS Profile</a>
-  <img src="kivasky_qr.png" alt="QR Code for Profile" class="qr">
+  <div  class="glitch">
+    <img src="logo.png" alt="KivaSky Logo" class="logo">
+    <p>We don’t ask who you are.<br>And we don’t tell anyone either.</p>
+    <a href="kivasky.signed.mobileconfig">Download DNS Profile</a>
+    <img src="kivasky_qr.png" alt="QR Code for Profile" class="qr">
+  </div>
 </body>
 </html>
