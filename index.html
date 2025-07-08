@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>KivaSky</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="KivaSky - Secure, anonymous internet with zero logs. VPN & DNS services for privacy-conscious users.">
+  <title>KivaSky - VPN & Secure DNS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
   <style>
-    html, body {
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
       margin: 0;
       padding: 0;
-      font-family: monospace;
-      height: 100%;
-      width: 100%;
-      color: #00f0ff;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
       text-align: center;
     }
-
-    .logo {
-      width: 220px;
-      max-width: 80%;
-      margin-bottom: 1.5em;
+    header {
+      padding: 60px 20px 20px;
     }
-
-    .qr {
-      margin-top: 2em;
-      width: 180px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
- .glitch {
-      animation: flicker 1.5s infinite;
-      letter-spacing: 0.05em;
+    h2 {
+      color: #00d8ff;
+      margin-bottom: 1.5rem;
     }
-
-    @keyframes flicker {
-      0% { opacity: 1; }
-      45% { opacity: 0.8; }
-      50% { opacity: 0.4; }
-      55% { opacity: 0.9; }
-      60% { opacity: 0.5; }
-      100% { opacity: 1; }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
     }
-
-    a {
-      color: #00f0ff;
-      font-weight: bold;
-      text-decoration: none;
-      margin-top: 1em;
+    a.button {
       display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #00d8ff;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
-
-    a:hover {
-      text-decoration: underline;
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      background-color: #121212;
+      padding: 20px 10px;
+    }
+    footer a {
+      color: #aaa;
+      margin: 0 12px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div  class="glitch">
-    <img src="logo.png" alt="KivaSky Logo" class="logo">
-    <p>We don’t ask who you are.<br>And we don’t tell anyone either.</p>
-    <a href="kivasky.net/clientCA.pem">Download CA Cert</a>
-    <img src="qrcode.png" alt="VPN QR Code" class="qr">
-  </div>
-  <footer style="margin-top: 3em; font-size: 0.9em; text-align: center;">
-  <p>
-    <a href="/termpolicy.html" target="_blank">Terms of Service & Privacy Policy</a>
-    <a href="/price.html">Pricing</a>
-  </p>
-</footer>
+  <header>
+    <h1>KivaSky</h1>
+    <h2>Exit life? Or recompile your net.</h2>
+  </header>
+
+  <section>
+    <p><strong>KivaSky</strong> is a secure, privacy-first VPN and DNS service. We don’t track, we don’t ask who you are — and we don’t tell anyone either.</p>
+
+    <ul style="text-align:left; display:inline-block; margin-top:2rem;">
+      <li>✔ Zero-log VPN with AES-256 encryption</li>
+      <li>✔ Secure DNS over HTTPS & TLS</li>
+      <li>✔ Anonymous signup – no email required</li>
+      <li>✔ Unlimited bandwidth & high-speed servers</li>
+      <li>✔ Compatible with all devices: Windows, macOS, Linux, Android, iOS</li>
+    </ul>
+
+    <a href="price.html" class="button">View Pricing</a>
+  </section>
+
+  <footer>
+     <p>
+    <a href="/termpolicy.html">Terms of Service</a>
+    
+  </footer>
 </body>
 </html>
